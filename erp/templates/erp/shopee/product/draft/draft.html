@@ -1,0 +1,46 @@
+{% extends "base_generic_2.html" %}
+
+{% load static %}
+
+{% block title %}  Bamboo Rat | 产品管理 {% endblock %}
+
+{% block page-heading %}
+    <h1>当前位置</h1>
+
+{% endblock %}              {% comment %}page-heading{% endcomment %}
+
+{% block wrapper-content %}
+<div class="wrapper wrapper-content animated fadeIn">
+    <div class="row">
+        <div class="col-2">
+            <div class="ibox ">
+                <div class="ibox-title">
+                    <h5>采集箱</h5>
+                </div>
+                <div class="ibox-content">
+                    <p> item 1 </p>
+                    <p> item 2 </p>
+                    <p> item 3 </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-10">
+            to do list.
+        </div>
+    </div>
+</div>
+
+<script>
+    var page_id = "shopee-draft";
+
+    $(document).ready(function(){
+        $("#side-menu > li > ul").removeClass("in");
+        $("#side-menu > li").removeClass("active");
+
+        $("#shopee-draft:parent").removeClass("active");
+
+    });
+</script>
+
+{% endblock %}
